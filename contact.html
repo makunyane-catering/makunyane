@@ -12,25 +12,40 @@
   <nav class="bg-yellow-700 text-white shadow-lg fixed w-full z-50">
     <div class="container mx-auto flex justify-between items-center p-4">
       <div class="flex items-center space-x-2">
-        <img src="Images/mylogo.png" alt="Makunyane Catering Logo" class="h-12">
+        <img src="Images/mylogo.png" alt="Makunyane Catering Logo" class="h-12 w-12 object-contain">
         <h1 class="text-2xl font-bold">Makunyane Catering</h1>
       </div>
       <div class="space-x-6">
         <a href="index.html" class="hover:text-yellow-300">Home</a>
         <a href="about.html" class="hover:text-yellow-300">About</a>
         <a href="services.html" class="hover:text-yellow-300">Services</a>
-        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+        <a href="contact.html" class="hover:text-yellow-300 font-bold">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Contact Section -->
-  <section class="py-20 px-6 text-center mt-20">
-    <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
-    <p class="mb-2">📞 Phone: 079 178 8633</p>
-    <p class="mb-6">📧 Email: makunyanecatering@gmail.com</p>
-    <a href="mailto:hazelweb@yahoo.com" class="px-6 py-3 bg-yellow-600 text-white rounded-lg shadow hover:bg-yellow-700">Send Email</a>
+  <section class="pt-28 px-6 max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 text-yellow-700 text-center">Get in Touch</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <!-- Contact Info -->
+      <div class="space-y-4">
+        <p class="text-lg"><strong>Phone:</strong> 069 236 0993</p>
+        <p class="text-lg"><strong>Email:</strong> hazelweb@yahoo.com</p>
+        <p class="text-lg"><strong>Address:</strong> [Your Address Here]</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="space-y-4 bg-white p-6 rounded-lg shadow">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700">
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700">
+        <textarea placeholder="Your Message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 h-32"></textarea>
+        <button type="submit" class="bg-yellow-700 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg w-full transition">Send Message</button>
+      </form>
+    </div>
   </section>
 
 </body>
 </html>
+
