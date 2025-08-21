@@ -6,65 +6,75 @@
   <title>Makunyane Catering</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="font-sans bg-white text-gray-800">
+
   <!-- Navbar -->
-  <nav class="bg-yellow-600 text-white p-4 flex justify-between items-center shadow-lg">
-    <h1 class="text-2xl font-bold">Makunyane Catering</h1>
-    <div class="space-x-4">
-      <a href="#home" class="px-4 py-2 bg-white text-yellow-600 rounded-lg hover:bg-gray-200">Home</a>
-      <a href="#menu" class="px-4 py-2 bg-white text-yellow-600 rounded-lg hover:bg-gray-200">Menu</a>
-      <a href="#services" class="px-4 py-2 bg-white text-yellow-600 rounded-lg hover:bg-gray-200">Services</a>
-      <a href="#contact" class="px-4 py-2 bg-white text-yellow-600 rounded-lg hover:bg-gray-200">Contact</a>
+  <nav class="fixed w-full bg-yellow-700 text-white shadow-lg z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Makunyane Catering</h1>
+      <div class="space-x-6">
+        <a href="#home" class="hover:text-yellow-300">Home</a>
+        <a href="#about" class="hover:text-yellow-300">About</a>
+        <a href="#services" class="hover:text-yellow-300">Services</a>
+        <a href="#contact" class="hover:text-yellow-300">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="text-center py-20 bg-yellow-100">
-    <h2 class="text-4xl font-bold mb-4">Delicious Food, Perfect Service</h2>
-    <p class="text-lg mb-6">We bring tradition and taste to your events with quality catering services.</p>
-    <a href="#menu" class="px-6 py-3 bg-yellow-600 text-white rounded-xl shadow hover:bg-yellow-700">See Our Menu</a>
+  <!-- Hero -->
+  <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');">
+    <div class="bg-black bg-opacity-50 p-10 rounded-xl text-center text-white">
+      <h2 class="text-5xl font-bold mb-4">Delicious Food, Perfect Service</h2>
+      <p class="mb-6 text-lg">Bringing taste and tradition to your events.</p>
+      <a href="#services" class="px-6 py-3 bg-yellow-500 text-black rounded-lg shadow hover:bg-yellow-400">Our Services</a>
+    </div>
   </section>
 
-  <!-- Menu Section -->
-  <section id="menu" class="py-16 px-6">
-    <h3 class="text-3xl font-bold text-center mb-10">Our Menu</h3>
-    <div class="grid md:grid-cols-3 gap-8 text-center">
-      <div class="p-6 border rounded-2xl shadow hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Traditional Meals</h4>
-        <p>Wholesome African cuisine prepared with love and care.</p>
+  <!-- About -->
+  <section id="about" class="py-20 px-6 bg-gray-100">
+    <div class="container mx-auto text-center max-w-3xl">
+      <h3 class="text-3xl font-bold mb-6">About Us</h3>
+      <p class="text-lg">
+        At Makunyane Catering, we specialize in delivering quality meals for every occasion.
+        From traditional African cuisine to modern buffets, our passion is making your events memorable with great taste and service.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
+    <div class="grid md:grid-cols-3 gap-8 container mx-auto">
+      <div class="p-6 border rounded-xl shadow hover:shadow-lg text-center">
+        <h4 class="text-xl font-bold mb-2">Traditional Catering</h4>
+        <p>Authentic African meals for weddings, funerals, and family gatherings.</p>
       </div>
-      <div class="p-6 border rounded-2xl shadow hover:shadow-lg">
-        <h4 class="text-xl font-bold mb-2">Buffet Catering</h4>
-        <p>A wide selection of meals for your weddings, parties, and events.</p>
-      </div>
-      <div class="p-6 border rounded-2xl shadow hover:shadow-lg">
+      <div class="p-6 border rounded-xl shadow hover:shadow-lg text-center">
         <h4 class="text-xl font-bold mb-2">Corporate Packages</h4>
-        <p>Professional catering tailored for business meetings & events.</p>
+        <p>Professional meals for business meetings, workshops, and conferences.</p>
+      </div>
+      <div class="p-6 border rounded-xl shadow hover:shadow-lg text-center">
+        <h4 class="text-xl font-bold mb-2">Buffet Services</h4>
+        <p>A wide range of dishes to suit every taste and event style.</p>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="bg-yellow-50 py-16 px-6">
-    <h3 class="text-3xl font-bold text-center mb-10">Our Services</h3>
-    <ul class="max-w-2xl mx-auto space-y-4 text-lg">
-      <li>✅ Event Catering (Weddings, Parties, Funerals)</li>
-      <li>✅ Corporate Catering (Meetings, Conferences)</li>
-      <li>✅ Home Deliveries & Special Orders</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-6 text-center">
-    <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
-    <p class="mb-2">📞 Phone: 069 236 0993</p>
-    <p class="mb-6">📧 Email: hazelweb@yahoo.com</p>
-    <a href="mailto:hazelweb@yahoo.com" class="px-6 py-3 bg-yellow-600 text-white rounded-xl shadow hover:bg-yellow-700">Send Us a Message</a>
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-yellow-50">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
+      <p class="mb-2">📞 Phone: 069 236 0993</p>
+      <p class="mb-6">📧 Email: hazelweb@yahoo.com</p>
+      <a href="mailto:hazelweb@yahoo.com" class="px-6 py-3 bg-yellow-600 text-white rounded-lg shadow hover:bg-yellow-700">Send Email</a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-yellow-600 text-white text-center p-4">
+  <footer class="bg-yellow-700 text-white text-center p-4">
     © 2025 Makunyane Catering. All rights reserved.
   </footer>
+
 </body>
 </html>
+
